@@ -4,58 +4,61 @@ var grafica = new Morris.Line({
     //  Chart data records -- each entry in this array corresponds to a point on
     //  the chart.
     data: [{
-            time: '2020-11-01',
+            second: 1,
             temperatura: 20
         },
         {
-            time: '2020-02-02',
+            second: 2,
             temperatura: 10
         },
         {
-            time: '2020-03-03',
+            second: 3,
             temperatura: 5
         },
         {
-            time: '2020-04-04',
+            second: 4,
             temperatura: 5
         },
         {
-            time: '2020-05-05',
+            second: 5,
             temperatura: 20
         },
         {
-            time: '2020-06-06',
+            second: 6,
             temperatura: 20
         },
         {
-            time: '2020-07-07',
+            second: 7,
             temperatura: 20
         },
         {
-            time: '2020-08-08',
+            second: 8,
             temperatura: 20
         },
         {
-            time: '2020-09-09',
+            second: 9,
             temperatura: 10
         },
         {
-            time: '2020-10-10',
+            second: 10,
             temperatura: 12
         },
         {
-            time: '2020-11-11',
+            second: 11,
             temperatura: 20
         },
         {
-            time: '2020-12-12',
+            second: 12,
             temperatura: 20
         }
 
 
     ],
     //  The name of the data record attribute that contains x-Casoss.
-    xkey: 'time',
+    xkey: "second",
+    xLabels: "second",
+    parseTime: false, 
+    xLabelFormat: function (x) { return "segundo";},
     //  A list of names of data record attributes that contain y-Casoss.
     ykeys: ['temperatura'],
     //  Labels for the ykeys -- will be displayed when you hover over the
@@ -83,7 +86,7 @@ $.ajax({
         for (let i = 0; i < res.length; i++) {
 
             info.push({
-                time: i+1,
+                second: i+1,
                 temperatura: res[i].temperatura
             })
         }
@@ -99,6 +102,6 @@ $.ajax({
 
 
 
-  }, 3000);
+  }, 250);
 
 // grafica.setData(dataMapael);

@@ -38,6 +38,9 @@ async def index():
                 valor = {'temperatura': row[0], 'humedad': row[1]}
                 valores.append(valor)
 
-    print(valores)
+    #print(valores)
 
-    return valores
+    if len(valores)>15:
+        return valores[-15:]
+    else:
+        return valores
