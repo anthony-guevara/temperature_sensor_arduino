@@ -1,6 +1,7 @@
 var grafica = new Morris.Line({
     //  ID of the element in which to draw the chart.
     element: 'myfirstchart',
+    
     //  Chart data records -- each entry in this array corresponds to a point on
     //  the chart.
     data: [{
@@ -64,8 +65,115 @@ var grafica = new Morris.Line({
     //  Labels for the ykeys -- will be displayed when you hover over the
     //  chart.
     labels: ['Grados Celcius'],
+    lineColors: ['#f00', '#ff407b'],
+    resize: true,
+   
+    gridTextColor:['#f4f4f4'],
+    
+    gridTextSize: '14px',
+
+
+
+   
+
+
+
+
 
 });
+
+
+//ocultar alerta//
+ 
+
+
+// Morris.Area({
+//     element: 'area-example',
+//     data: [
+//         {
+//             second: 1,
+//             temperatura: 20
+//         },
+
+//         ,
+//         {
+//             second: 2,
+//             temperatura: 10
+//         },
+//         {
+//             second: 3,
+//             temperatura: 5
+//         },
+//         {
+//             second: 4,
+//             temperatura: 5
+//         },
+//         {
+//             second: 5,
+//             temperatura: 20
+//         },
+//         {
+//             second: 6,
+//             temperatura: 20
+//         },
+//         {
+//             second: 7,
+//             temperatura: 20
+//         },
+//         {
+//             second: 8,
+//             temperatura: 20
+//         },
+//         {
+//             second: 9,
+//             temperatura: 10
+//         },
+//         {
+//             second: 10,
+//             temperatura: 12
+//         },
+//         {
+//             second: 11,
+//             temperatura: 20
+//         },
+//         {
+//             second: 12,
+//             temperatura: 20
+//         }
+
+
+      
+//     ],
+//     xkey: "second",
+//     labels: ["second"],
+
+//     parseTime: false, 
+//     xLabelFormat: function (x) { return "segundo";},
+//     //  A list of names of data record attributes that contain y-Casoss.
+//     ykeys: ['temperatura'],
+//     //  Labels for the ykeys -- will be displayed when you hover over the
+//     //  chart.
+//     labels: ['Grados Celcius'],
+//     lineColors: ['#f00', '#ff407b'],
+//     resize: true,
+   
+//     gridTextColor:['#f4f4f4'],
+    
+//     gridTextSize: '14px',
+
+
+
+
+//     lineColors: ['#f00', '#ff407b'],
+//     resize: true,
+   
+//     gridTextColor:['#f4f4f4'],
+    
+//     gridTextSize: '14px'
+//   });
+
+
+
 
 
 
